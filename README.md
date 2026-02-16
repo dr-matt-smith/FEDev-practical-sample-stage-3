@@ -45,43 +45,21 @@ To add nav links we need to add `<a>` elements to our pages.
 
 1. We'll add a `<nav>` element, containing 2 links to both pages, just below the `<header>`
 
-1. So we'll add links for the homepage (root of the website) to URL `/`, and to the characters page with URL `/characters.html' as follows
+1. So we'll add links for the homepage (root of the website) to URL `/`, and to the characters page with URL `/characters.html` as follows
+
+The traditional approach, which we'll use, is to declare the links inside unordered list elements as follows. I put all this inside a `<nav>` element, to allow for simpler targeting of these links in our CSS rules (to follow in next Stage):
 
    ```html
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <title>Rings of power - home page</title>
-   </head>
-   <body>
-   
-   <header>
-       <img src="/images/title.png" alt="Rings of power logo" />
-   </header>
-   
    <nav>
-       <a href="/">HOME</a>
-       <a href="/characters.html">CHARACTERS</a>
+      <ul>
+         <li>
+            <a href="/">HOME</a>
+         </li>
+   
+         <li>
+            <a href="/characters.html">CHARACTERS</a>
+         </li>
+      </ul>
    </nav>
-   
-   ... (as before)...
-   
    ```
-
-NOTE: If you prefer, you could go the more traditional route, and use links inside unordered list elements as follows:
-
-   ```html
-   <ul>
-      <li>
-         <a href="/">HOME</a>
-      </li>
-   
-      <li>
-          <a href="/characters.html">CHARACTERS</a>
-      </li>
-   </ul>
-   ```
-
-It's your project - so write code  you are happiest with! I'm happy with simpler, less traditional CSS rules, so I prefer not to have the hassle of removing the list features as part of the styling of a navigation bar.
-
 
